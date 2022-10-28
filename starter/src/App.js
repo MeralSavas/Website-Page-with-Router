@@ -9,6 +9,7 @@ import Html from "./pages/Html";
 import Css from "./pages/Css";
 import Logo from "./pages/Logo";
 import Card from "./components/card/Card";
+import data from "./helper/data";
 
 function App() {
   return (
@@ -16,12 +17,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="home" element={<Home />} />
+        <Route path="/html" element={<Html />} />
+        <Route path="/css" element={<Css />} />
+        <Route path="/logo" element={<Logo />} />
+
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
-        <Route path="html" element={<Html />} />
-        <Route path="css" element={<Css />} />
-        <Route path="logo" element={<Logo />} />
-        <Route path="card" element={<Card />} />
+        <Route path="card/:id" element={<Card data={data} />} />
       </Routes>
 
       <Footer />

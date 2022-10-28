@@ -7,7 +7,7 @@ import { useState } from "react";
 const Home = () => {
   const navigate = useNavigate();
   const [card, setCard] = useState([]);
-
+  // console.log(data);
   return (
     <div className="root">
       <section id="showcase">
@@ -24,15 +24,21 @@ const Home = () => {
 
       <section id="boxes">
         <div className="container">
-          {data?.map((card) => {
-            const { id, src, url, title } = card;
+          {data?.map((item) => {
+            const { id, src, url, title, name } = item;
+
+            // console.log(id);
             return (
               <div
                 key={id}
-                onClick={() => navigate(`/card/${url}`, { state: card })}
+                // onClick={() => navigate(`/card/${id}`, { state: item })}
+                onClick={() => navigate(`/${name}`)}
                 className="box"
               >
-                <img src={src} alt="" />
+                <Link to="">
+                  <img src={src} alt="html" />
+                </Link>
+
                 <h3>{title}</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

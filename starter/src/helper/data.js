@@ -7,6 +7,7 @@ import Logo from "../pages/Logo";
 
 const data = [
   {
+    name: "html",
     id: 1,
     src: html,
     url: Html,
@@ -14,6 +15,7 @@ const data = [
   },
 
   {
+    name: "css",
     id: 2,
     src: css,
     url: Css,
@@ -21,6 +23,7 @@ const data = [
   },
 
   {
+    name: "logo",
     id: 3,
     src: logo,
     url: Logo,

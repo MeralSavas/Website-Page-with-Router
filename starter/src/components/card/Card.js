@@ -1,22 +1,30 @@
 import React from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
-const Card = ({ src, url, title }) => {
+const Card = ({ data }) => {
   const { id } = useParams();
   const navigate = useNavigate();
-  console.log(id);
+  const newData = data.filter((item) => item.id == id);
+  console.log(newData);
+  const { src, url, title } = newData[0];
 
-  const { state: card } = useLocation();
-  console.log(card);
+  // console.log("data, data1", data);
+
+  const { state: item } = useLocation();
+  console.log(item);
 
   return (
     <div className="box">
-      <img src={card.src} alt="" />
-      <h3>{card.title}</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.z Vivamus mi
-        augue, viverra sit amet ultricies
-      </p>
+      {/* {data.id === id ? ( */}
+      <>
+        <img src={src} alt="" />
+        <h3>{title}</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.z Vivamus mi
+          augue, viverra sit amet ultricies
+        </p>
+      </>
+      {/* s */}
     </div>
   );
 };
