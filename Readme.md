@@ -1,22 +1,15 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
-
-# Coding Challenge-003 : Clarusway Web Page with React Router
+# Web Page with React Router
 
 ## Description
 
 Project aims to create a Clarusway Web Page with Router.
 
-## Problem Statement
-
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
-
 ## Project Skeleton
 
 ```
-003 - Clarusway Web Page with Router (folder)
+003 - Web Page with Router (folder)
 |
-|----readme.md         # Given to the students (Definition of the project)
+|----readme.md      
 SOLUTION
 ├── public
 │     └── index.html
@@ -44,7 +37,7 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
+## Project
 
 ![Project 003 Snapshot](clarusway-web-page-with-router.gif)
 
@@ -62,12 +55,6 @@ Build a Clarusway Web Page using ReactJS and react-router.
 
 - ReactJS
 
-### At the end of the project, students will be able to;
-
-- Improve coding skills within HTML & CSS & JS & ReactJS.
-
-- Use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
 ## Steps to Solution
 
 - Step 1: Create React App using `yarn create react-app clarusway-web-page-with-router` or `npx create-react-app clarusway-web-page-with-router`.
@@ -78,10 +65,3 @@ Build a Clarusway Web Page using ReactJS and react-router.
 
 - Step 4: Add project gif to your project and README.md file.
 
-## Notes
-
-- You can add additional functionalities and design to your app.
-
-[starter folder](./starter/)
-
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
