@@ -63,5 +63,4 @@ Build a Clarusway Web Page using ReactJS and react-router.
 
 - Step 3: Push your application into your own public repo on Github.
 
-- Step 4: Add project gif to your project and README.md file.
 
